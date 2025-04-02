@@ -6,7 +6,7 @@ const Tabs = () => {
   const selectedIndex = tabs.indexOf(selected);
 
   return (
-    <div className="relative py-4 flex justify-between text-white gap-12 *:capitalize w-full max-w-md">
+    <div className="relative py-4 flex justify-between text-white gap-12 *:capitalize w-full">
       {tabs.map((tab) => (
         <div
           key={tab}

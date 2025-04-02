@@ -8,3 +8,7 @@
     padding-inline: 2rem;
   }
 }
+
+.recharts-default-legend {
+  display: none;
+}

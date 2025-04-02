@@ -2,31 +2,33 @@ import { BsArrowRight } from "react-icons/bs"
 
 const Insights = () => {
   return (
-    <div className="rounded-lg p-4 bg-zinc-800 text-white flex flex-col gap-4">
-      <p className="text-2xl font-semibold">Insights</p>
-      <div className="flex justify-between border-b pb-4 border-white/20">
-        <div className="flex gap-2 flex-col items-start tracking-wider">
-          <p className="text-xl font-semibold">Founders</p>
-          <div className="flex items-center gap-2">
-            <p className="text-white font-bold text-4xl">7.4K</p>
-            <div className="*:text-xs">
-              <p className="text-green-500">+000%</p>
-              <p className="text-gray-400">(000)</p>
+    <div className="rounded-lg p-4 w-full bg-zinc-800 text-white flex flex-col gap-4">
+      <div className="flex flex-col gap-4 lg:gap-8 lg:h-5/6">
+        <p className="text-2xl font-semibold">Insights</p>
+        <div className="flex justify-between lg:gap-8 lg:flex-col border-b pb-4 lg:pb-12 border-white/20">
+          <div className="flex gap-2 flex-col items-start tracking-wider">
+            <p className="text-xl font-semibold lg:text-2xl">Founders</p>
+            <div className="flex items-center gap-2">
+              <p className="text-white font-bold text-4xl lg:text-5xl">7.4K</p>
+              <div className="*:text-xs *:lg:text-sm">
+                <p className="text-green-500">+000%</p>
+                <p className="text-gray-400">(000)</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="flex gap-2 flex-col items-start tracking-wider">
-          <p className="text-xl font-semibold">Investors</p>
-          <div className="flex items-center gap-2">
-            <p className="text-white font-bold text-4xl">6.09K</p>
-            <div className="*:text-xs">
-              <p className="text-green-500">+000%</p>
-              <p className="text-gray-400">(000)</p>
+          <div className="flex gap-2 flex-col items-start tracking-wider">
+            <p className="text-xl font-semibold lg:text-2xl">Investors</p>
+            <div className="flex items-center gap-2">
+              <p className="text-white font-bold text-4xl lg:text-5xl">6.09K</p>
+              <div className="*:text-xs *:lg:text-sm">
+                <p className="text-green-500">+000%</p>
+                <p className="text-gray-400">(000)</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <button className="flex items-center self-end gap-2 tracking-wider font-semibold">View detailed insights <BsArrowRight /> </button>
+      <button className="flex items-center self-end gap-2 tracking-wider font-semibold lg:h-1/6">View detailed insights <BsArrowRight /> </button>
     </div>
   )
 }
