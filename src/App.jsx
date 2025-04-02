@@ -30,7 +30,7 @@ const App = () => {
           </nav>
           <div className="container flex flex-col gap-4">
             <Tabs />
-            <div className="flex flex-col gap-4 lg:flex-row">
+            <div className="flex flex-col gap-4 lg:flex-row xl:max-h-72">
               <Visitors />
               <Insights />
             </div>
