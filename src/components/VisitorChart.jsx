@@ -14,8 +14,6 @@ const VisitorChart = () => {
   return (
     <ResponsiveContainer width="100%">
       <LineChart
-        width={500}
-        height={300}
         data={data}
       >
         <XAxis dataKey="name" />

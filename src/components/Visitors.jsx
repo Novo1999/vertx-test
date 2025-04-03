@@ -20,7 +20,7 @@ const Visitors = () => {
           <p className="text-gray-400">(897)</p>
         </div>
       </div>
-      <div className="h-64 w-full pr-6">
+      <div className="max-h-64 xl:max-h-32 h-full w-full pr-6">
         <VisitorChart />
       </div>
     </div>

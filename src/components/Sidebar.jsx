@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
   return (
     <div className="flex min-h-screen">
       <div
-        className={`fixed inset-0 bg-black/50 bg-opacity-50 z-[999] lg:hidden transition-transform duration-300 ${isOpen ? 'block' : 'hidden'
+        className={`fixed inset-0 bg-black/50 bg-opacity-50 z-[999] lg:hidden transition-transform duration-300  ${isOpen ? 'block' : 'hidden'
           }`}
         onClick={toggleSidebar}
       />
@@ -42,7 +42,7 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
         <img src={avatar} alt="avatar" className="size-10 rounded-full mx-auto" />
       </div>
       <div
-        className={`fixed lg:relative min-h-screen inset-0 lg:left-0 lg:w-1/5 w-64 z-[999] bg-black text-white transition-transform duration-300 transform ${isOpen || isDesktop ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed lg:relative min-h-screen inset-0 lg:left-0 lg:w-1/6 w-64 z-[999] bg-black border-r border-white/40 text-white transition-transform duration-300 transform ${isOpen || isDesktop ? 'translate-x-0' : '-translate-x-full'
           } lg:translate-x-0`}
       >
         <div>
@@ -59,7 +59,7 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
       </div>
 
       <div
-        className={`transition-all duration-300 lg:w-4/5 mx-auto`}
+        className={`transition-all duration-300 lg:w-5/6 mx-auto`}
       >
         {children}
       </div>

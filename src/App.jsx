@@ -21,7 +21,7 @@ const App = () => {
         <div className="flex flex-col gap-4">
           <nav className="hidden lg:flex min-h-16 border-b border-white/40">
             <ul className="text-white flex font-semibold justify-between w-full text-xl">
-              <li className="border-l border-white/40 pt-4 pl-4">Analytics</li>
+              <li className="pt-4 pl-4">Analytics</li>
               <div className="flex gap-12 *:border-l *:border-white/40 *:pt-4 *:pl-4">
                 <li>Activity</li>
                 <li className="pr-4">Logout</li>
