@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { FaPlus } from "react-icons/fa";
 import avatar from '../assets/avatar.jpg';
 import vertxLogo from '../assets/vertx.png';
 
@@ -39,7 +40,10 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
         <div className='border-b border-white/40 min-h-16 sticky top-0 bg-black flex justify-center items-center'>
           <img src={vertxLogo} alt="avatar" className="size-10 p-2 bg-white rounded-full" />
         </div>
-        <img src={avatar} alt="avatar" className="size-10 rounded-full mx-auto" />
+        <div className='flex flex-col justify-between h-full max-h-[90vh] items-center'>
+          <img src={avatar} alt="avatar" className="size-10 rounded-full mx-auto" />
+          <FaPlus className='text-white fixed bottom-10' />
+        </div>
       </div>
       <div
         className={`fixed lg:relative min-h-screen inset-0 lg:left-0 lg:w-1/6 w-64 z-[999] bg-black border-r border-white/40 text-white transition-transform duration-300 transform ${isOpen || isDesktop ? 'translate-x-0' : '-translate-x-full'
