@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FaPlus } from "react-icons/fa";
-import avatar from '../assets/avatar.jpg';
-import vertxLogo from '../assets/vertx.png';
-import { useAssignment } from '../context/AssignmentContext.jsx';
+import avatar from '../../assets/avatar.jpg';
+import vertxLogo from '../../assets/vertx.png';
+import { useAssignment } from '../../context/AssignmentContext.jsx';
 
 const Sidebar = ({ isOpen, setIsOpen, children }) => {
   const [isDesktop, setIsDesktop] = useState(true);
@@ -60,7 +60,7 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
             <li><a href="#" className="text-gray-500">Dealroom</a></li>
             <li><a href="#" className="text-gray-500">Profile</a></li>
             <li><a href="#" className="text-gray-500">Settings</a></li>
-            <li onClick={() => {
+            <li className='animate-bounce' onClick={() => {
               toggleAssignment()
               setIsOpen(false)
             }}><a href="#" className="text-red-500">Assignment {assignment ? 1 : 2}</a></li>

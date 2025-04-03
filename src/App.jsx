@@ -1,15 +1,14 @@
 import { useState } from "react"
-import Demographics from "./components/Demographics.jsx"
-import DesktopNav from "./components/DesktopNav.jsx"
-import Insights from "./components/Insights.jsx"
-import MobileMenu from "./components/MobileMenu.jsx"
-import Navbar from "./components/Navbar.jsx"
-import Sidebar from "./components/Sidebar.jsx"
-import Tabs from "./components/Tabs.jsx"
-import Visitors from "./components/Visitors.jsx"
+import MobileMenu from "./components/assignment-1/MobileMenu.jsx"
+import Navbar from "./components/assignment-1/Navbar.jsx"
+import Sidebar from "./components/assignment-1/Sidebar.jsx"
+import Assignment1 from "./components/shared/Assignment1.jsx"
+import Assignment2 from "./components/shared/Assignment2.jsx"
+import { useAssignment } from "./context/AssignmentContext.jsx"
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { assignment } = useAssignment()
 
   const handleOpenSidebar = () => {
     setIsOpen(!isOpen)
@@ -19,20 +18,9 @@ const App = () => {
     <main className="bg-black">
       <Navbar handleOpenSidebar={handleOpenSidebar} />
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}>
-        <div className="flex flex-col">
-          <DesktopNav />
-          <Tabs />
-          <div className="container flex flex-col gap-4">
-            <p className="text-white font-bold text-3xl hidden lg:block py-4">Overview</p>
-            <div className="flex flex-col gap-4 lg:flex-row xl:max-h-72">
-              <Visitors />
-              <Insights />
-            </div>
-            <Demographics />
-            <MobileMenu />
-          </div>
-        </div>
+        {!assignment ? <Assignment1 /> : <Assignment2 />}
       </Sidebar>
+      <MobileMenu />
     </main>
   )
 }

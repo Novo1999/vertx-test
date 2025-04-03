@@ -9,7 +9,7 @@ const Insights = () => {
           <div className="flex gap-2 flex-col items-start tracking-wider">
             <p className="text-xl font-semibold lg:text-2xl xl:text-xl">Founders</p>
             <div className="flex items-center gap-2">
-              <p className="text-white font-bold text-4xl lg:text-5xl xl:text-4xl">7.4K</p>
+              <p className="text-white font-bold text-3xl lg:text-5xl xl:text-4xl">7.4K</p>
               <div className="*:text-xs *:lg:text-sm">
                 <p className="text-green-500">+000%</p>
                 <p className="text-gray-400">(000)</p>
@@ -19,7 +19,7 @@ const Insights = () => {
           <div className="flex gap-2 flex-col items-start tracking-wider">
             <p className="text-xl font-semibold lg:text-2xl xl:text-xl">Investors</p>
             <div className="flex items-center gap-2">
-              <p className="text-white font-bold text-4xl lg:text-5xl xl:text-4xl">6.09K</p>
+              <p className="text-white font-bold text-3xl lg:text-5xl xl:text-4xl">6.09K</p>
               <div className="*:text-xs *:lg:text-sm">
                 <p className="text-green-500">+000%</p>
                 <p className="text-gray-400">(000)</p>

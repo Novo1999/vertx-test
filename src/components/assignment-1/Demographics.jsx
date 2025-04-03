@@ -1,9 +1,9 @@
 import { BsArrowRight } from 'react-icons/bs';
-import canada from '../assets/canada.png';
-import india from '../assets/india.png';
-import uae from '../assets/uae.png';
-import usa from '../assets/usa.png';
-import worldMap from '../assets/world.png';
+import canada from '../../assets/canada.png';
+import india from '../../assets/india.png';
+import uae from '../../assets/uae.png';
+import usa from '../../assets/usa.png';
+import worldMap from '../../assets/world.png';
 
 const Demographics = () => {
   const flags = [

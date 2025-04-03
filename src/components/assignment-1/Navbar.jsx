@@ -1,6 +1,6 @@
 import { BsThreeDotsVertical } from "react-icons/bs";
-import avatar from '../assets/avatar.jpg';
-import vertxLogo from '../assets/vertx.png';
+import avatar from '../../assets/avatar.jpg';
+import vertxLogo from '../../assets/vertx.png';
 
 const Navbar = ({ handleOpenSidebar }) => {
   return (
