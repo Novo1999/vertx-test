@@ -12,7 +12,7 @@ const data = [
 
 const VisitorChart = () => {
   return (
-    <ResponsiveContainer width="100%">
+    <ResponsiveContainer width="100%" height={100}>
       <LineChart
         data={data}
       >

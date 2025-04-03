@@ -2,7 +2,7 @@ import VisitorChart from "./VisitorChart.jsx";
 
 const Visitors = () => {
   return (
-    <div className="rounded-lg w-full xl:w-2/3 bg-zinc-800 text-white flex flex-col gap-4">
+    <div className="rounded-lg w-full xl:w-2/3 bg-zinc-800 text-white flex flex-col gap-4 mt-6 lg:mt-0">
       <div className="flex gap-2 items-center justify-start lg:gap-4 *:bg-black *:p-2 *:text-xs pt-4 px-4">
         <div className="rounded-2xl">Visitors</div>
         <select className="text-white px-2 py-1 rounded-2xl">
@@ -20,7 +20,7 @@ const Visitors = () => {
           <p className="text-gray-400">(897)</p>
         </div>
       </div>
-      <div className="max-h-64 xl:max-h-32 h-full w-full pr-6">
+      <div className="max-h-64 min-h-32 xl:max-h-32 h-full w-full pr-6">
         <VisitorChart />
       </div>
     </div>

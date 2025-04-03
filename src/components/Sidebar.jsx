@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { FaPlus } from "react-icons/fa";
 import avatar from '../assets/avatar.jpg';
 import vertxLogo from '../assets/vertx.png';
+import { useAssignment } from '../context/AssignmentContext.jsx';
 
 const Sidebar = ({ isOpen, setIsOpen, children }) => {
   const [isDesktop, setIsDesktop] = useState(true);
+  const { assignment, toggleAssignment } = useAssignment()
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -46,7 +48,7 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
         </div>
       </div>
       <div
-        className={`fixed lg:relative min-h-screen inset-0 lg:left-0 lg:w-1/6 w-64 z-[999] bg-black border-r border-white/40 text-white transition-transform duration-300 transform ${isOpen || isDesktop ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed lg:relative min-h-screen inset-0 lg:left-0 lg:w-1/6 w-64 z-[9999] bg-black border-r border-white/40 text-white transition-transform duration-300 transform ${isOpen || isDesktop ? 'translate-x-0' : '-translate-x-full'
           } lg:translate-x-0`}
       >
         <div className='sticky top-0'>
@@ -58,7 +60,10 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
             <li><a href="#" className="text-gray-500">Dealroom</a></li>
             <li><a href="#" className="text-gray-500">Profile</a></li>
             <li><a href="#" className="text-gray-500">Settings</a></li>
-            <li><a href="#" className="text-red-500">Assignment 2</a></li>
+            <li onClick={() => {
+              toggleAssignment()
+              setIsOpen(false)
+            }}><a href="#" className="text-red-500">Assignment {assignment ? 1 : 2}</a></li>
           </ul>
         </div>
       </div>
