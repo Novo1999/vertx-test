@@ -58,6 +58,7 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
             <li><a href="#" className="text-gray-500">Dealroom</a></li>
             <li><a href="#" className="text-gray-500">Profile</a></li>
             <li><a href="#" className="text-gray-500">Settings</a></li>
+            <li><a href="#" className="text-red-500">Assignment 2</a></li>
           </ul>
         </div>
       </div>

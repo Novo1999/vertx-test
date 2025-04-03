@@ -21,8 +21,9 @@ const App = () => {
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}>
         <div className="flex flex-col">
           <DesktopNav />
+          <Tabs />
           <div className="container flex flex-col gap-4">
-            <Tabs />
+            <p className="text-white font-bold text-3xl hidden lg:block py-4">Overview</p>
             <div className="flex flex-col gap-4 lg:flex-row xl:max-h-72">
               <Visitors />
               <Insights />

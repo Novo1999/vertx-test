@@ -23,7 +23,7 @@ const Tabs = () => {
     </div>
     <div className="justify-between hidden lg:flex *:text-xl sticky top-16 bg-black z-[999] **:cursor-pointer **:transition **:duration-300">
       <div className="flex gap-4 *:pt-3">
-        <p className="text-white font-semibold border-r border-white/40 pr-8">Overview</p>
+        <p className="text-white font-semibold border-r border-white/40 px-8">Overview</p>
         <p className="text-gray-500 hover:text-white">Demographics</p>
       </div>
       <div className="border-l border-white/40 px-[27.5px] py-3">
