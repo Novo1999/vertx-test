@@ -44,7 +44,7 @@ const Demographics = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-4 mt-6 xl:mt-0  pb-4 xl:pb-0 md:gap-6 xl:gap-5 2xl:gap-4 h-fit border-white/20 xl:w-1/3">
+        <div className="flex flex-col gap-4 mt-6 xl:mt-0  pb-4 xl:pb-0 md:gap-6 xl:gap-5 2xl:gap-8 h-fit border-white/20 xl:w-1/3">
           {flags.map(({ name, color, data, flag }) => (
             <div key={name} className="flex gap-4 w-full md:gap-6 justify-between">
               <img

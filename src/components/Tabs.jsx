@@ -5,8 +5,8 @@ const Tabs = () => {
   const tabs = ["overview", "demographics"];
   const selectedIndex = tabs.indexOf(selected);
 
-  return (
-    <div className="relative py-4 flex justify-between text-white gap-12 *:capitalize w-full">
+  return (<>
+    <div className="py-4 flex justify-between text-white gap-12 *:capitalize w-full lg:hidden sticky top-16 bg-black z-[999]">
       {tabs.map((tab) => (
         <div
           key={tab}
@@ -21,6 +21,16 @@ const Tabs = () => {
         style={{ transform: `translateX(${selectedIndex * 100}%)` }}
       />
     </div>
+    <div className="justify-between hidden lg:flex *:text-xl sticky top-16 bg-black z-[999]">
+      <div className="flex gap-4 *:pt-4">
+        <p className="text-white font-semibold border-r border-white/40 pr-8">Overview</p>
+        <p className="text-gray-500">Demographics</p>
+      </div>
+      <div className="border-l border-white/40 px-[27.5px] py-3">
+        <p className="text-white">More</p>
+      </div>
+    </div>
+  </>
   );
 };
 
