@@ -20,23 +20,23 @@ const Demographics = () => {
         <div className="relative xl:w-3/4">
           <img src={worldMap} alt="world" className='2xl:max-h-[28rem] relative 2xl:bottom-12' />
           {/* markers */}
-          <div className="p-1 rounded-full border border-orange-600 absolute top-[70px] md:top-[150px] left-6 sm:left-10 md:left-20 lg:left-24">
+          <div className="p-1 xl:p-2 rounded-full border border-orange-600 absolute top-[70px] md:top-[150px] left-6 sm:left-10 md:left-20 lg:left-24 xl:left-36">
             <div className="bg-orange-600 size-1 rounded-full"></div>
           </div>
-          <div className="p-1 rounded-full border border-orange-600 absolute top-[90px] md:top-[170px] left-16 sm:left-20 md:left-32 lg:left-40">
+          <div className="p-1 xl:p-2 rounded-full border border-orange-600 absolute top-[90px] md:top-[170px] left-16 sm:left-20 md:left-32 lg:left-40 xl:left-52">
             <div className="bg-orange-600 size-1 rounded-full"></div>
           </div>
-          <div className="p-1 rounded-full border border-yellow-400 absolute top-[75px] md:top-[155px] left-15 sm:left-18 md:left-30 lg:left-36">
+          <div className="p-1 xl:p-2 rounded-full border border-yellow-400 absolute top-[75px] md:top-[155px] left-15 sm:left-18 md:left-30 lg:left-36 xl:left-52">
             <div className="bg-yellow-400 size-1 rounded-full"></div>
           </div>
-          <div className="p-1 rounded-full border border-blue-400 absolute top-[80px] md:top-[160px] right-24 sm:right-32 md:right-40 lg:right-48">
+          <div className="p-1 xl:p-2 rounded-full border border-blue-400 absolute top-[80px] md:top-[160px] right-24 sm:right-32 md:right-40 lg:right-48 xl:right-60">
             <div className="bg-blue-400 size-1 rounded-full"></div>
           </div>
-          <div className="p-1 rounded-full border border-green-600 absolute top-[78px] md:top-[158px] right-32 sm:right-40 md:right-48 lg:right-56">
+          <div className="p-1 xl:p-2 rounded-full border border-green-600 absolute top-[78px] md:top-[158px] right-32 sm:right-40 md:right-48 lg:right-56  xl:right-64">
             <div className="bg-green-600 size-1 rounded-full"></div>
           </div>
         </div>
-        <div className="flex justify-between gap-2 items-center bg-black px-4 py-1 rounded-full border border-white/40 md:w-fit md:gap-6 xl:absolute bottom-8">
+        <div className="flex justify-between gap-2 items-center bg-black px-4 py-1 rounded-full border flex-wrap border-white/40 md:w-fit md:gap-6 xl:absolute bottom-8">
           {flags.map(({ name, color }) => (
             <div key={name} className="flex justify-between items-center gap-2">
               <div className={`${color} rounded-full size-4`}></div>
@@ -63,7 +63,7 @@ const Demographics = () => {
               </div>
             </div>
           ))}
-          <button className="flex items-center justify-end pt-4 xl:pt-2 border-t border-white/40 mt-4 xl:mt-0 w-full gap-2 tracking-wider font-semibold">
+          <button className="flex items-center justify-end pt-4 xl:pt-2 border-t border-white/40 mt-4 xl:mt-0 w-full gap-2 tracking-wider font-semibold cursor-pointer">
             View countries <BsArrowRight />
           </button>
         </div>

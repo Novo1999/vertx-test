@@ -28,7 +28,7 @@ const Insights = () => {
           </div>
         </div>
       </div>
-      <button className="flex items-center self-end gap-2 tracking-wider font-semibold lg:h-1/6">View detailed insights <BsArrowRight /> </button>
+      <button className="flex items-center self-end gap-2 tracking-wider font-semibold lg:h-1/6 cursor-pointer">View detailed insights <BsArrowRight /> </button>
     </div>
   )
 }

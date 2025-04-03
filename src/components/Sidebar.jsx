@@ -47,7 +47,7 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
       >
         <div className='sticky top-0'>
           <h2 className="text-2xl font-bold p-[15.5px] border-b border-white/40 ">VertxLabs. </h2>
-          <ul className="flex flex-col gap-8 p-4 text-xl">
+          <ul className="flex flex-col gap-8 p-4 text-xl **:hover:text-white **:transition **:duration-300">
             <li><a href="#" className="text-gray-500">Dashboard</a></li>
             <li><a href="#" className="text-white">Analytics</a></li>
             <li><a href="#" className="text-gray-500">Connect</a></li>
@@ -59,7 +59,7 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
       </div>
 
       <div
-        className={`transition-all duration-300 lg:w-5/6 mx-auto`}
+        className={`transition-all duration-300 lg:w-5/6 w-full mx-auto`}
       >
         {children}
       </div>
