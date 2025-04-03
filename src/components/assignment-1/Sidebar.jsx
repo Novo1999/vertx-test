@@ -42,8 +42,22 @@ const Sidebar = ({ isOpen, setIsOpen, children }) => {
         <div className='border-b border-white/40 min-h-16 sticky top-0 bg-black flex justify-center items-center'>
           <img src={vertxLogo} alt="avatar" className="size-10 p-2 bg-white rounded-full" />
         </div>
-        <div className='flex flex-col justify-between h-full max-h-[90vh] items-center'>
-          <img src={avatar} alt="avatar" className="size-10 rounded-full mx-auto" />
+        <div className={`flex flex-col ${!assignment ? "justify-between" : "gap-4"} h-full max-h-[90vh] items-center`}>
+          {!assignment && <img src={avatar} alt="avatar" className="size-10 rounded-full mx-auto" />}
+          {assignment && (
+            <div className="flex flex-col gap-4 *:hover:bg-slate-200 *:cursor-pointer">
+              {[...Array(3)].map((_, index) => (
+                <div key={index} className="relative w-10 h-10 mx-auto">
+                  <img src={avatar} alt="avatar" className="size-10 rounded-full" />
+                  <div
+                    className={`absolute bottom-0 right-0 w-3 h-3 rounded-full ${index % 2 !== 0 ? "bg-red-700" : "bg-green-700"
+                      }`}
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+
           <FaPlus className='text-white fixed bottom-10' />
         </div>
       </div>
