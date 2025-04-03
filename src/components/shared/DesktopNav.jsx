@@ -8,8 +8,8 @@ const DesktopNav = () => {
       <ul className="text-white flex font-semibold justify-between w-full text-xl *:cursor-pointer">
         <li className="pt-4 pl-8">{!assignment ? "Analytics" : "Profile"}</li>
         <div className="flex *:border-l *:border-white/40 *:pt-4">
-          <li className="px-8">Activity</li>
-          <li className="px-8">Log out</li>
+          <li className="px-8 btn-hover">Activity</li>
+          <li className="px-8 btn-hover">Log out</li>
         </div>
       </ul>
     </nav>

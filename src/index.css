@@ -12,3 +12,9 @@
 .recharts-default-legend {
   display: none;
 }
+
+@layer components {
+  .btn-hover {
+    @apply hover:!text-black hover:bg-white transition duration-300
+  }
+}
